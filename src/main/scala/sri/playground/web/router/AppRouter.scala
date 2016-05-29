@@ -12,7 +12,7 @@ object AppRouter {
 
     override val history: History = HistoryFactory.browserHistory(new HistoryOptions(basename = "/sri-web-materialui"))
 
-    override val initialRoute: (WebStaticPage, WebRoute) = defineInitialRoute(HomePage, HomeScreen())
+    override val initialRoute: (WebStaticPage, WebRoute) = defineInitialRoute(HomePage, (route: WebRoute) => HomeScreen())
 
     override def renderScene(route: WebRoute): ReactElement = {
       super.renderScene(route)

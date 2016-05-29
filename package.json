@@ -1,14 +1,13 @@
 {
-  "name": "sri-web-template",
+  "name": "sri-web-materialui-template",
   "version": "0.1.0",
-  "description": "sri  web template project",
+  "description": "sri  web materialui template project",
   "repository": {
     "type": "git",
     "url": ""
   },
   "scripts": {
     "start": "webpack & webpack-dev-server --progress --colors --port 8092 --historyApiFallback true",
-    "server": "webpack-dev-server --progress --colors --port 8090 --history-api-fallback --output-public-path /assets/",
     "build": "webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
@@ -18,7 +17,7 @@
     "css-loader": "^0.14.5",
     "file-loader": "^0.8.4",
     "image-webpack-loader": "^1.6.1",
-    "lodash": "^3.9.3",
+    "lodash": "^4.12.0",
     "node-libs-browser": "^0.5.2",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
@@ -26,10 +25,10 @@
     "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
-    "history": "^2.0.0",
-    "material-ui": "^0.14.4",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
-    "react-tap-event-plugin": "^0.2.2"
+    "history": "^3.0.0-2",
+    "material-ui": "^0.15.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "react-tap-event-plugin": "^1.0.0"
   }
 }

@@ -4,7 +4,7 @@ name := "sri-web-materialui-template"
 
 scalaVersion := "2.11.8"
 
-val sriVersion = "0.5.0-SNAPSHOT"
+val sriVersion = "0.5.0"
 
 libraryDependencies ++= Seq("com.github.chandu0101.sri-extra" %%% "web" % sriVersion)
 
