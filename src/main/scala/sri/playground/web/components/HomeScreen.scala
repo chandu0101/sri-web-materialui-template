@@ -64,8 +64,6 @@ object HomeScreen {
 
   object styles extends WebStyleSheet {
 
-
-
     val container = style(
       display.flex,
       flexDirection.column,
@@ -89,11 +87,9 @@ object HomeScreen {
 
     val slider = style(width := "100%", marginTop := 20)
 
-
   }
 
-  val ctor = getTypedConstructor(js.constructorOf[Component], classOf[Component])
 
 
-  def apply(key: js.UndefOr[String] = js.undefined, ref: js.Function1[Component, _] = null) = createElementNoProps(ctor, key = key, ref = ref)
+  def apply(key: js.UndefOr[String] = js.undefined, ref: js.Function1[Component, Unit] = null) = makeElementNoProps[Component](key = key, ref = ref)
 }

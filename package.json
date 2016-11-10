@@ -7,7 +7,7 @@
     "url": ""
   },
   "scripts": {
-    "start": "webpack & webpack-dev-server --progress --colors --port 8092 --historyApiFallback true",
+    "start": "webpack & webpack-dev-server --progress --colors --port 8090 --historyApiFallback true",
     "build": "webpack --config webpack.config.prod.js"
   },
   "devDependencies": {
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "history": "^3.0.0-2",
-    "material-ui": "^0.15.0",
+    "material-ui": "^0.16.1",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-tap-event-plugin": "^1.0.0"
